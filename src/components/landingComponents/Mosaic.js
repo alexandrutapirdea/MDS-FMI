@@ -6,7 +6,7 @@ const Example = (props) => {
     return (
         <CardColumns>
             <Card>
-                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
+                <CardImg top width="100%" src="https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/shutterstock_96451256.jpg?itok=-YlDRkWt" alt="Card image cap" />
                 <CardBody>
                     <CardTitle>Card title</CardTitle>
                     <CardSubtitle>Card subtitle</CardSubtitle>
@@ -15,10 +15,10 @@ const Example = (props) => {
                 </CardBody>
             </Card>
             <Card>
-                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
+                <CardImg top width="100%" src="http://www.bu.edu/today/files/2012/02/h_11-4411-PHYSICS-276.jpg" alt="Card image cap" />
             </Card>
             <Card>
-                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
+                <CardImg top width="100%" src="http://blog.intostudy.com/wp-content/uploads/2013/01/INTO-Newcastle-teacher-Helen-1024x681.jpg" alt="Card image cap" />
             </Card>
             <Card>
                 <CardBody>
@@ -34,7 +34,8 @@ const Example = (props) => {
                 <Button>Button</Button>
             </Card>
             <Card>
-                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
+                <CardImg top width="100%" src="https://it.seattlecentral.edu/sites/it.seattlecentral.dev/files/inline-images/programming-student-at-seattle-central.jpg
+" alt="Card image cap" />
                 <CardBody>
                     <CardTitle>Card title</CardTitle>
                     <CardSubtitle>Card subtitle</CardSubtitle>
