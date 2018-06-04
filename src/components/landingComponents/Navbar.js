@@ -23,10 +23,8 @@ export default class testNav extends React.Component {
                 mode="horizontal"
             >
                 <Menu.Item key="mail">
-                    <Icon type="mail" />Navigation One
-                </Menu.Item>
-                <Menu.Item key="app" disabled>
-                    <Icon type="appstore" />Navigation Two
+                    <Icon type="login" />Sign In
+                    <a href='https://www.google.com/'/>
                 </Menu.Item>
                 <SubMenu title={<span><Icon type="setting" />Navigation Three - Submenu</span>}>
                     <MenuItemGroup title="Item 1">
@@ -39,7 +37,7 @@ export default class testNav extends React.Component {
                     </MenuItemGroup>
                 </SubMenu>
                 <Menu.Item key="alipay">
-                    <a href="https://ant.design" target="_blank" rel="noopener noreferrer">Navigation Four - Link</a>
+                    <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Navigation Four - Link</a>
                 </Menu.Item>
             </Menu>
         );
