@@ -81,27 +81,31 @@ class SignUpForm extends Component {
             username === '';
 
         return (
-            <form onSubmit={this.onSubmit}>
+            <form onSubmit={this.onSubmit} className="Register">
                 <input
                     value={username}
+                    id="username"
                     onChange={event => this.setState(byPropKey('username', event.target.value))}
                     type="text"
                     placeholder="Full Name"
                 />
                 <input
                     value={email}
+                    id={"email"}
                     onChange={event => this.setState(byPropKey('email', event.target.value))}
                     type="text"
                     placeholder="Email Address"
                 />
                 <input
                     value={passwordOne}
+                    id={"passwordOne"}
                     onChange={event => this.setState(byPropKey('passwordOne', event.target.value))}
                     type="password"
                     placeholder="Password"
                 />
                 <input
                     value={passwordTwo}
+                    id={"passwordTwo"}
                     onChange={event => this.setState(byPropKey('passwordTwo', event.target.value))}
                     type="password"
                     placeholder="Confirm Password"
