@@ -1,11 +1,12 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+ import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from './landingComponents/Carousel';
 import Mosaic from './landingComponents/Mosaic';
 import Navbar from './landingComponents/Navbar';
-//import Calendar from './landingComponents/Calendar';
+// import Calendar from './landingComponents/Calendar';
 import {Calendar, Badge } from 'antd';
 import 'antd/dist/antd.css';
+import './landingComponents/landingStyle.css';
 
 //Calendar functions
 function getListData(value) {
@@ -13,23 +14,20 @@ function getListData(value) {
     switch (value.date()) {
         case 8:
             listData = [
-                { type: 'warning', content: 'This is warning event.' },
-                { type: 'success', content: 'This is usual event.' },
+                { type: 'warning', content: 'Examen MDS' },
+                { type: 'success', content: 'Verificare Retele' },
             ]; break;
         case 10:
             listData = [
-                { type: 'warning', content: 'This is warning event.' },
-                { type: 'success', content: 'This is usual event.' },
-                { type: 'error', content: 'This is error event.' },
+                { type: 'warning', content: 'Proiect PAO' },
+                { type: 'success', content: 'CARIERE V7.0' },
+                { type: 'error', content: 'Concurs de informatica' },
             ]; break;
         case 15:
             listData = [
-                { type: 'warning', content: 'This is warning event' },
-                { type: 'success', content: 'This is very long usual event。。....' },
-                { type: 'error', content: 'This is error event 1.' },
-                { type: 'error', content: 'This is error event 2.' },
-                { type: 'error', content: 'This is error event 3.' },
-                { type: 'error', content: 'This is error event 4.' },
+                { type: 'warning', content: 'Recuperare geometrie' },
+                { type: 'success', content: 'Consultatie algebra' },
+
             ]; break;
         default:
     }
@@ -74,7 +72,6 @@ function monthCellRender(value) {
 
 const LandingPage = () =>
 <div>
-
     <div>
         <Navbar/>
     </div>

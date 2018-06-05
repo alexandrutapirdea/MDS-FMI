@@ -7,6 +7,10 @@ import {
     CarouselCaption
 } from 'reactstrap';
 
+const stilImagine ={
+    width:'100vw',
+    position:'relative',
+};
 const items = [
     {
         src: 'https://www.uvt.ro/res/img/images/info/info-2.JPG',
@@ -71,7 +75,7 @@ class Example extends Component {
                     onExited={this.onExited}
                     key={item.src}
                 >
-                    <img src={item.src} alt={item.altText} />
+                    <img src={item.src} alt={item.altText}  style={stilImagine}/>
                     <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
                 </CarouselItem>
             );
