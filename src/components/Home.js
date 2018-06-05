@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 import withAuthorization from './withAuthorization';
 import { db } from '../firebase';
-
+import * as routes from "../constants/routes";
+import { Link } from 'react-router-dom';
 class HomePage extends Component {
     constructor(props) {
         super(props);
@@ -23,9 +24,7 @@ class HomePage extends Component {
         return (
             <div>
                 <h1>Home</h1>
-                <p>The Home Page is accessible by every signed in user.</p>
-                { !!users && <UserList users={users} /> }
-                <p>Email:.</p>
+                <p>Aici poti gasi informatii referitoare la grupa si seria ta</p>
                 { !!users && <UserByEmail users={users} /> }
 
             </div>
@@ -33,31 +32,27 @@ class HomePage extends Component {
     }
 }
 
-const UserList = ({ users }) =>
-    <div>
-        <h2>List of Usernames of Users</h2>
-        <p>(Saved on Sign Up in Firebase Database)</p>
-        {Object.keys(users).map(key =>
-            <div key={key}>{users[key].username}</div>
-
-        )}
-        { console.log(users)}
-
-    </div>;
+// const UserList = ({ users }) =>
+//     <div>
+//         <h2>List of Usernames of Users</h2>
+//         <p>(Saved on Sign Up in Firebase Database)</p>
+//         {Object.keys(users).map(key =>
+//             <div key={key}>{users[key].username}</div>
+//
+//         )}
+//         { console.log(users)}
+//
+//     </div>;
 
 const UserByEmail = ({ users }) =>
 
 
     <div>
-        <h2>List of Emails of Users</h2>
-        <p>(Saved on Sign Up in Firebase Database)</p>
+        <span>Poti vizualiza informatii in</span> <Link to={routes.ACCOUNT}>pagina ta</Link>
+        <h2>Colegi care folosesc myFMI</h2>
         {Object.keys(users).map(key =>
-            <div key={key}>{users[key].email}</div>
-
+            <div key={key}>{users[key].username}</div>
         )}
-
-        {/*{console.log(Object.keys(users).find(key => users[key].email === "Gianina33@gmail.com"))}*/}
-
     </div>;
 
 const authCondition = (authUser) => !!authUser;
